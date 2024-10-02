@@ -1,0 +1,23 @@
+#result{
+    display: none;
+    background-color: whitesmoke;
+    width: 70%;
+    text-align: center;
+    border-radius: 30px;
+    margin : 10px;
+}
+.resultname {
+    font-size: 45px;
+}
+.resultDesc {
+    font-size: 22px;
+
+}
+@media (max-width: 768px) {
+    .resultname { 
+    font-size: 30px; 
+    }
+    .resultDesc {
+        font-size: 17px;
+    }
+}
