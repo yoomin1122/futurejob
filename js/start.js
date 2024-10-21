@@ -98,6 +98,12 @@ function begin(){
 
   function reload() {
     // (location || window.location || document.location).reload();
+    var resultImg = document.createElement('img');
+    const imgDiv = document.querySelector('#resultImg');
+    var imgURL = null
+    resultImg.src = imgURL;
+    resultImg.classList.add('img-fluid');
+    imgDiv.removeChild(resultImg);
     result.style.WebkitAnimation = "fadeOut 1s";
     result.style.animation = "fadeOut 1s";
     setTimeout(() => {
@@ -107,8 +113,8 @@ function begin(){
         result.style.display = "none";
         main.style.display = "block"
       }, 450)
-      endPoint = 10
-      select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      endPoint = endPoint
+      select = select
 
     }, 450);
 }
