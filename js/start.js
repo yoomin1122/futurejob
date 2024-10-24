@@ -97,26 +97,7 @@ function begin(){
 
 
   function reload() {
-    // (location || window.location || document.location).reload();
-    var resultImg = document.createElement('img');
-    const imgDiv = document.querySelector('#resultImg');
-    var imgURL = null
-    resultImg.src = imgURL;
-    resultImg.classList.add('img-fluid');
-    imgDiv.removeChild(resultImg);
-    result.style.WebkitAnimation = "fadeOut 1s";
-    result.style.animation = "fadeOut 1s";
-    setTimeout(() => {
-      main.style.WebkitAnimation = "fadeIn 1s";
-      main.style.animation = "fadeIn 1s";
-      setTimeout(() => {
-        result.style.display = "none";
-        main.style.display = "block"
-      }, 450)
-      endPoint = endPoint
-      select = select
-
-    }, 450);
+    (location || window.location || document.location).reload();
 }
 
 
