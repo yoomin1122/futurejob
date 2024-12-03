@@ -1,8 +1,8 @@
 const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result")
-const endPoint = 10
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const endPoint = 15
+const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 
 function calResult(){
