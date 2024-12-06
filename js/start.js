@@ -2,12 +2,13 @@ const main = document.querySelector("#main");
 const qna = document.querySelector("#qna");
 const result = document.querySelector("#result")
 const endPoint = 15
-const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+const select = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 
 function calResult(){
   console.log(select);
   var result = select.indexOf(Math.max(...select));
+  console.log(result)
   return result;
 }
 
@@ -18,7 +19,7 @@ function setResult(){
 
   var resultImg = document.createElement('img');
   const imgDiv = document.querySelector('#resultImg');
-  var imgURL = './img/image-' + point + '.jpg';
+  var imgURL = './img/image-' + point + '.png';
   resultImg.src = imgURL;
   resultImg.alt = point;
   resultImg.classList.add('img-fluid');
@@ -92,30 +93,7 @@ function begin(){
       goNext(qIdx);
     }, 450);
   }
-
-
-
-
-  function reload() {
+function reload() {
     (location || window.location || document.location).reload();
 }
 
-
-
-  /* 캡처 관련 명령어 */
-  function copyToClipboard(val) {
-    const t = document.createElement("textarea");
-    document.body.appendChild(t);
-    t.value = val;
-    t.select();
-    document.execCommand('copy');
-    document.body.removeChild(t);
-  }
-  function copy() {
-    copyToClipboard('https://yoomin1122.github.io/bloodtypelove/');
-    alert("클립보드에 복사되었습니다.");
-  }
-
-  function img_capture() {
-    alert("현재 이 기능은 준비중입니다");
-  }
